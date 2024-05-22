@@ -4,10 +4,7 @@ class QuestionsController < ApplicationController
 
   def answer
     @query = params[:query]
-
-    if @query != @query.upcase
-      @answer = coach_answer(@query)
-    end
+    @answer = coach_answer(@query)
   end
 
   def coach_answer(your_message)

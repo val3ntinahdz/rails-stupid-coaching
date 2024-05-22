@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+ body {
+  display: grid;
+  justify-content: center;
+  padding-top: 50px;
+ }
+
+ .info {
+  padding-left: 15px;
+  border-left:rgba(177, 175, 175, 0.863) solid;
+  margin: 10px;
+ }
+
+ #card-coach {
+  background-color: rgba(241, 239, 206, 0.863);
+  padding-top: 10px;
+ }
+
+#link {
+  padding: 10px;
+}

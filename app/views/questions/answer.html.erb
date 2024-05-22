@@ -1,9 +1,14 @@
-<h1>Questions</h1>
+<h1>Stupid Coaching</h1>
 
-<p class="info">YOU</p>
-<p class="query"><%= @query %></p>
 
-<p class="info">YOUR COACH</p>
-<p class="answer"><%= @answer %></p>
-
-<%= link_to "Ask a new question", ask_path %>
+<div class='info'>
+  <p><%= @query %></p>
+  <footer class="blockquote-footer">You</footer>
+</div>
+<div class='info' id="card-coach">
+  <p><%= @answer %></p>
+  <footer class="blockquote-footer">Your coach</footer>
+</div>
+<div id="link">
+  <%= link_to "Ask a new question", ask_path %>
+</div>
